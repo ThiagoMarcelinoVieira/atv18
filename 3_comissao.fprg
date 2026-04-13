@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-13 01:44:06 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODA5OzIwMjYtMDQtMTM7IjAxOjM3OjM5ICI7Mjg2NA=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODA5OzIwMjYtMDQtMTM7IjAxOjQ0OjA2ICI7MTsyOTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="comissao, valorProduto, percentual" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o valor do produto: &quot;" newline="True"/>
+            <input variable="valorProduto"/>
+            <if expression="valorProduto &lt;= 5000">
+                <then>
+                    <assign variable="percentual" expression="0.05"/>
+                </then>
+                <else>
+                    <assign variable="percentual" expression="0.10"/>
+                </else>
+            </if>
+            <assign variable="comissao" expression="valorProduto * percentual"/>
+            <output expression="&quot;A comiss&#227;o do vendedor foi de R$&quot; &amp; comissao &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

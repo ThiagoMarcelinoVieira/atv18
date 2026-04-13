@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-13 03:56:34 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODA5OzIwMjYtMDQtMTM7IjAxOjU1OjA1ICI7Mjg1Nw=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODA5OzIwMjYtMDQtMTM7IjAzOjU2OjM0ICI7MzsyOTcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe a primeira nota: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Informe a segunda nota: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Informe a terceira nota: &quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="media" expression="(n1 + n2 + n3) / 3"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <output expression="&quot;Sua m&#233;dia foi &quot; &amp; media &amp; &quot;, voc&#234; foi APROVADO!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(media &gt;= 4) &amp;&amp; (media &lt; 7)">
+                        <then>
+                            <output expression="&quot;Sua m&#233;dia foi &quot; &amp; media &amp; &quot;, voc&#234; ficou de RECUPERA&#199;&#195;O.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="media &lt; 4">
+                                <then>
+                                    <output expression="&quot;Sua m&#233;dia foi &quot; &amp; media &amp; &quot;, voc&#234; foi REPROVADO...&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

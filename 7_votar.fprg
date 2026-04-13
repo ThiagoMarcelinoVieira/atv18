@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-13 03:55:19 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODA5OzIwMjYtMDQtMTM7IjAyOjA4OjMxICI7Mjg1NQ=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODA5OzIwMjYtMDQtMTM7IjAzOjU1OjE5ICI7MzsyOTc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe a sua idade: &quot;" newline="True"/>
+            <input variable="idade"/>
+            <if expression="idade &gt;= 16 &amp;&amp; idade &lt;= 17">
+                <then>
+                    <output expression="&quot;O voto &#233; opcional.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="idade &gt;= 18 &amp;&amp; idade &lt;= 70">
+                        <then>
+                            <output expression="&quot;O voto &#233; obrigat&#243;rio.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="idade &gt; 70">
+                                <then>
+                                    <output expression="&quot;O voto &#233; opcional.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Voc&#234; n&#227;o pode votar...&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
